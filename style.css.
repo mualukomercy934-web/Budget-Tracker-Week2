@@ -1,0 +1,175 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #176b52;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Form section */
+.add-expense-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-expense-section input,
+.add-expense-section select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Advanced selector: direct child */
+.add-expense-section > h2 {
+    color: #176b52;
+}
+
+/* Advanced selector: negation pseudo-class */
+input:not([type="submit"]) {
+    background-color: #fafafa;
+}
+
+/* Advanced selector: focus pseudo-class */
+input:focus,
+select:focus {
+    outline: 2px solid #176b52;
+    border-color: #176b52;
+}
+
+/* Button styling */
+button {
+    background-color: #176b52;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #104d3c;
+}
+
+/* Expense table */
+.expenses-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.expenses-section h2 {
+    color: #176b52;
+}
+
+/* Advanced selector: descendant */
+.expenses-section td {
+    text-align: left;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #176b52;
+    color: white;
+}
+
+/* Advanced selector: alternating rows */
+tr:nth-child(even) {
+    background-color: #eaf3ef;
+}
+
+/* Table hover effect */
+tbody tr:hover {
+    background-color: #d0e8dc;
+}
+
+/* Instructions section */
+.instructions {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    color: #176b52;
+    font-weight: bold;
+}
+
+.instructions p {
+    line-height: 1.6;
+}
+
+/* Video section */
+.video-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-section iframe {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #176b52;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
